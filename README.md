@@ -1,0 +1,2 @@
+# CSharp_StringManager
+文字列操作系の処理を理解する為のテストプロジェクト
