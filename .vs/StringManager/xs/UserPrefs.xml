@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{464246F4-DC54-4BE0-B7E6-C0E4E8B06603}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StringManager/Program.fs">
+    <Files>
+      <File FileName="StringManager/Program.fs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StringManager" expanded="True">
+            <Node name="StringManager" expanded="True">
+              <Node name="Program.fs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.StringManager FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
