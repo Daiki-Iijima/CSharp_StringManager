@@ -15,7 +15,7 @@ namespace String_Manage
 
             switch(getMode)
             {
-                case "NC":
+                case "NC":　// nullチェック
                     {
                         Console.WriteLine("=== nullチェックモード ===");
 
@@ -29,14 +29,21 @@ namespace String_Manage
                         }
                     }
                     break;
-                case "CJ":
+                case "CJ":  // 日本語比較（ひら・カタ判別なし
                     {
+                        Console.WriteLine("=== 日本語比較（ひら・カタ判別なし）モード ===");
+
+                        Console.WriteLine("一致しているか確認したい文字列を入力してください");
+
+                        Console.WriteLine("= 1文字列目 =");
                         var serchWord_1 = Console.ReadLine();
+
+                        Console.WriteLine("= 2文字列目 =");
                         var serchWord_2 = Console.ReadLine();
 
                         //  CulturInfo使用にはusingが必要
                         //  using System.Globalization;
-                        var cultureInfo = new CultureInfo("jp-JP");
+                        var cultureInfo = new CultureInfo("ja-JP");
 
                         if (String.Compare(serchWord_1,serchWord_2,cultureInfo,CompareOptions.IgnoreKanaType) == 0)
                         {
@@ -47,7 +54,11 @@ namespace String_Manage
                             Console.WriteLine("一致していません");
                         }
 
-                        return;
+                    }
+                    break;
+                case "":
+                    {
+
                     }
                     break;
 
