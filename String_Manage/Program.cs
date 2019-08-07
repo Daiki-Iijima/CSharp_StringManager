@@ -10,6 +10,7 @@ namespace String_Manage
             Console.WriteLine("=== モードを選択してください ===");
             Console.WriteLine("nullチェック : NC");
             Console.WriteLine("日本語比較（ひら・カタ判別なし）: CJ");
+            Console.WriteLine("英字比較（大文字・小文字判別なし）: CE");
 
             var getMode = Console.ReadLine();
 
@@ -17,9 +18,7 @@ namespace String_Manage
             {
                 case "NC":　// nullチェック
                     {
-                        Console.WriteLine("=== nullチェックモード ===");
-
-                        var getSt = Console.ReadLine();
+                        var getSt = GetString("=== nullチェックモード ===");
 
                         if (string.IsNullOrWhiteSpace(getSt))
                         {
@@ -32,14 +31,11 @@ namespace String_Manage
                 case "CJ":  // 日本語比較（ひら・カタ判別なし
                     {
                         Console.WriteLine("=== 日本語比較（ひら・カタ判別なし）モード ===");
-
                         Console.WriteLine("一致しているか確認したい文字列を入力してください");
 
-                        Console.WriteLine("= 1文字列目 =");
-                        var serchWord_1 = Console.ReadLine();
+                        var serchWord_1 = GetString("= 1文字列目 =");
 
-                        Console.WriteLine("= 2文字列目 =");
-                        var serchWord_2 = Console.ReadLine();
+                        var serchWord_2 = GetString("= 2文字列目 =");
 
                         //  CulturInfo使用にはusingが必要
                         //  using System.Globalization;
@@ -56,7 +52,7 @@ namespace String_Manage
 
                     }
                     break;
-                case "":
+                case "CE":
                     {
 
                     }
@@ -64,6 +60,22 @@ namespace String_Manage
 
             }
 
+        }
+
+        /// <summary>
+        /// アナウンスを表示した後に、文字列を受け取る
+        /// </summary>
+        /// <param name="writeSt"></param>
+        /// <returns></returns>
+        private static string GetString(string writeSt)
+        {
+            string getSt = null;
+
+            Console.WriteLine(writeSt);
+
+            getSt = Console.ReadLine();
+
+            return getSt;
         }
     }
 }
