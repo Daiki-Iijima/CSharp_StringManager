@@ -65,7 +65,7 @@ namespace String_Manage
 
                     }
                     break;
-                case "CE":
+                case "CE":  //  英字比較
                     {
                         Console.WriteLine("=== 英字比較（大文字・小文字判別なし）モード ===");
                         Console.WriteLine("一致しているか確認したい文字列を入力してください");
@@ -85,9 +85,8 @@ namespace String_Manage
                             Console.WriteLine("一致していません");
                         }
                     }
-                    
                     break;
-                case "UP":
+                case "UP":　//   全て大文字にする
                     {
                         Console.WriteLine("=== 全て大文字化モード ===");
 
@@ -98,7 +97,7 @@ namespace String_Manage
                         Console.WriteLine(getSt.ToUpper());
                     }
                     break;  
-                case "LO":
+                case "LO":  //  全て小文字にする
                     {
                         Console.WriteLine("=== 全て小文字化モード ===");
 
@@ -109,7 +108,7 @@ namespace String_Manage
                         Console.WriteLine(getSt.ToLower());
                     }
                     break;
-                case "CC":
+                case "CC":  //  指定した文字が含まれているか
                     {
                         Console.WriteLine("=== 指定した文字が一文字でも含まれているかモード ===");
 
@@ -124,7 +123,7 @@ namespace String_Manage
                         Console.WriteLine(isExist ? "含まれています":"含まれていません");
                     }
                     break;
-                case "TS":
+                case "TS":  //  空白を排除する
                     {
                         Console.WriteLine("=== 空白の消去モード ===");
 
